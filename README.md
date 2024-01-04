@@ -2,15 +2,15 @@
 
 ### Screenshots
 
-![desktop inactive version](./assets/desktop-inactive.png)
+![desktop inactive version](./src/assets/desktop-inactive.png)
 
-![desktop active version](./assets/desktop-active.png)
+![desktop active version](./src/assets/desktop-active.png)
 
-![mobile version](./assets/mobile.png)
+![mobile version](./src/assets/mobile.png)
 
-![successful endgame](./assets/successful-endgame.png)
+![successful endgame](./src/assets/successful-endgame.png)
 
-![unsuccessful endgame](./assets/unsuccessful-endgame.png)
+![unsuccessful endgame](./src/assets/unsuccessful-endgame.png)
 
 ### Links
 
