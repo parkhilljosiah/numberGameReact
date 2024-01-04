@@ -1,0 +1,157 @@
+.game__container {
+  position: relative;
+  margin-top: 5em;
+  display: grid;
+  grid-template-rows: repeat(5, 6em);
+  grid-template-columns: repeat(10, 6em);
+  grid-auto-flow: column;
+  grid-gap: 0.5em;
+}
+
+.link {
+  position: absolute;
+  top: -8em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 5em;
+}
+
+.game__instuctions {
+  position: absolute;
+  text-align: center;
+  top: -3em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5em;
+}
+
+.number__container {
+  cursor: pointer;
+  border-radius: 0.25em;
+  border: none;
+  height: 6em;
+  width: 6em;
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282828;
+  color: white;
+  font-weight: 900;
+  transition: 0.25s ease-in-out;
+}
+
+.number__container:hover {
+  background-color: #4e4e4e;
+}
+
+.number__container:disabled {
+  background-color: #ff904d;
+  color: white;
+  cursor: unset;
+}
+
+.gameover__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameover {
+  font-size: 4em;
+  margin: 0;
+}
+
+.gameover__time {
+  color: #ff904d;
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+.gameover__button {
+  font-size: 1.25em;
+  cursor: pointer;
+  border-radius: 0.25em;
+  border: none;
+  padding: 1em;
+  background-color: #282828;
+  color: white;
+  font-weight: 900;
+  transition: 0.25s ease-in-out;
+}
+
+.gameover__button:hover {
+  background-color: #4e4e4e;
+}
+
+@media screen and (max-width: 499px) {
+  .logo {
+    height: 6em;
+    top: -7em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .game__instuctions {
+    width: 100vw;
+    position: absolute;
+    top: -4em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.85em;
+  }
+
+  .game__container {
+    grid-template-rows: repeat(10, 3em);
+    grid-template-columns: repeat(5, 3em);
+    grid-auto-flow: column;
+    grid-gap: 0.5em;
+  }
+
+  .number__container {
+    border: none;
+    height: 3em;
+    width: 3em;
+  }
+
+  .gameover {
+    font-size: 2.5em;
+  }
+
+  .gameover__button {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .game__instuctions {
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+  }
+
+  .game__container {
+    grid-template-rows: repeat(5, 4em);
+    grid-template-columns: repeat(10, 4em);
+    grid-auto-flow: column;
+    grid-gap: 0.5em;
+  }
+
+  .number__container {
+    border: none;
+    height: 4em;
+    width: 4em;
+  }
+}
